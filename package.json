@@ -1,6 +1,9 @@
 {
-  "name": "boiler",
+  "name": "@boiler/root",
   "version": "0.0.1",
   "description": "A typescript fullstack boilerplate.",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "api"
+  ]
 }
