@@ -4,6 +4,7 @@
   "description": "A typescript fullstack boilerplate.",
   "license": "MIT",
   "workspaces": [
-    "api"
+    "api",
+    "app"
   ]
 }

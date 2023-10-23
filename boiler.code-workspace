@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "name": "api",
+      "path": "./api"
+    },
+    {
+      "name": "app",
+      "path": "./app"
+    },
+    {
+      "name": "root",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true
+  }
+}
