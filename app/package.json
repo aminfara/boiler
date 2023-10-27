@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "preview": "node index.js"
+    "clean": "rimraf dist",
+    "build": "tsc --build --verbose",
+    "preview": "node dist/index.js"
   }
 }
