@@ -3,6 +3,6 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "preview": "node index.js"
+    "preview": "node src/index.js"
   }
 }
