@@ -4,8 +4,8 @@
   "description": "A typescript fullstack boilerplate.",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx .",
-    "format": "prettier --ignore-path .gitignore --write ."
+    "lint": "eslint --ext .js,.jsx .",
+    "format": "prettier --write ."
   },
   "workspaces": [
     "api",
