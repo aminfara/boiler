@@ -3,8 +3,19 @@
   "version": "0.0.1",
   "description": "A typescript fullstack boilerplate.",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx .",
+    "format": "prettier --ignore-path .gitignore --write ."
+  },
   "workspaces": [
     "api",
     "app"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-security": "^1.7.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3"
+  }
 }
