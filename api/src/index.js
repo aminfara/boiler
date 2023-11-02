@@ -1,5 +1,5 @@
-import { sayHello } from "./utils/sayHello.js";
+import { sayHello } from "./utils/say-hello.js";
 
-let name = "World";
+const name = "World";
 
 console.log(sayHello(name));

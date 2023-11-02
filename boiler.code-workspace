@@ -15,6 +15,7 @@
   ],
   "settings": {
     "editor.formatOnSave": true,
-    "javascript.preferences.importModuleSpecifierEnding": "js"
+    "javascript.preferences.importModuleSpecifierEnding": "js",
+    "cSpell.words": ["semistandard"]
   }
 }
