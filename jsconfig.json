@@ -3,7 +3,7 @@
     "target": "esnext",
     "useDefineForClassFields": true,
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
+    "module": "NodeNext",
 
     // https://github.com/tsconfig/bases/blob/main/bases/strictest.json
     "strict": true,
@@ -21,7 +21,8 @@
 
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "nodenext"
   },
   "exclude": ["node_modules", "**/node_modules/*"]
 }

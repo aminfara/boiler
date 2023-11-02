@@ -16,6 +16,37 @@
   "settings": {
     "editor.formatOnSave": true,
     "javascript.preferences.importModuleSpecifierEnding": "js",
-    "cSpell.words": ["semistandard"]
+    "cSpell.words": ["semistandard"],
+    "jest.autoRun": "off"
+  },
+  "extensions": {},
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "name": "vscode-jest-tests.v2",
+        "request": "launch",
+        "program": "${workspaceRoot:root}/node_modules/.bin/jest",
+        "args": [
+          "--runInBand",
+          "--watchAll=false",
+          "--testNamePattern",
+          "${jest.testNamePattern}",
+          "--runTestsByPath",
+          "${jest.testFile}"
+        ],
+        "env": {
+          "NODE_OPTIONS": "--experimental-vm-modules"
+        },
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "disableOptimisticBPs": true,
+        "windows": {
+          "program": "${workspaceRoot:root}/node_modules/jest/bin/jest"
+        }
+      }
+    ]
   }
 }
