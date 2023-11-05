@@ -1,5 +1,5 @@
-import { sayHello } from "../src/utils/say-hello.js";
 import { buildApp } from "../src/app.js";
+import { sayHello } from "../src/utils/say-hello.js";
 
 describe("root", () => {
   /** @type {import("fastify").FastifyInstance} */
@@ -7,7 +7,7 @@ describe("root", () => {
 
   beforeAll(async () => {
     // TODO: Can we share the app instance between tests?
-    app = buildApp();
+    app = await buildApp();
     await app.ready();
   });
 

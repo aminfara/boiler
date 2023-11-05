@@ -1,10 +1,11 @@
 import { buildApp } from "./app.js";
 
-const app = buildApp();
+// TODO: If node env development, use logger level debug else use info
+const app = await buildApp({ logger: { level: "debug" } });
 
-app.listen({ port: 3000 }, function (error, _address) {
-  if (error) {
-    app.log.error(error);
-    throw error;
-  }
-});
+try {
+  await app.listen({ port: 3000 });
+} catch (error) {
+  app.log.error(error);
+  throw error;
+}
