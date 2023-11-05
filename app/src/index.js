@@ -1,1 +1,3 @@
-console.log("Hello, app!");
+import print from "./print.js";
+
+print("Hello, app!");

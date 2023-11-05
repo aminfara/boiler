@@ -17,7 +17,8 @@
     "editor.formatOnSave": true,
     "javascript.preferences.importModuleSpecifierEnding": "js",
     "cSpell.words": ["semistandard"],
-    "jest.autoRun": "off"
+    "jest.autoRun": "off",
+    "javascript.preferences.importModuleSpecifier": "relative"
   },
   "extensions": {},
   "launch": {

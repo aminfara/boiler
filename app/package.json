@@ -4,6 +4,6 @@
   "type": "module",
   "scripts": {
     "preview": "node src/index.js",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --passWithNoTests"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
   }
 }

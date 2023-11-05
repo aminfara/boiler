@@ -6,7 +6,7 @@ module.exports = {
   extends: ["semistandard", "plugin:unicorn/recommended", "prettier"],
   overrides: [
     {
-      files: ["*.test.js"],
+      files: ["*.test.js", "*.spec.js"],
       extends: ["plugin:jest/recommended", "plugin:jest/style"],
       env: {
         jest: true,
