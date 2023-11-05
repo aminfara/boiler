@@ -6,6 +6,7 @@ describe("root", () => {
   let app;
 
   beforeAll(async () => {
+    // TODO: Can we share the app instance between tests?
     app = buildApp();
     await app.ready();
   });

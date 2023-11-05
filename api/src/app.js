@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import { sayHello } from "./utils/say-hello.js";
+import { addRoutes } from "./routes/index.js";
 
 /**
  *
@@ -7,12 +7,9 @@ import { sayHello } from "./utils/say-hello.js";
  * @returns
  */
 export function buildApp(options = {}) {
-  const app = Fastify({ ...options, logger: true });
-  app.route({
-    method: "GET",
-    url: "/",
-    handler: async () => ({ message: sayHello() }),
-  });
+  const app = Fastify({ logger: true, ...options });
+
+  addRoutes(app);
 
   return app;
 }
