@@ -1,23 +1,14 @@
-import { jest } from "@jest/globals";
 import { sayHello } from "./say-hello.js";
 
 describe("sayHello", () => {
-  /**
-   * @type {{ mockRestore: () => void; }}
-   */
-  let consoleLogSpy;
-
-  beforeEach(() => {
-    consoleLogSpy = jest.spyOn(console, "log");
-  });
-
-  afterEach(() => {
-    consoleLogSpy.mockRestore();
-  });
-
-  it('should log "Hello {name}!" to the console', () => {
+  it('should return "Hello {name}!"', () => {
     const name = "John Doe";
-    sayHello(name);
-    expect(consoleLogSpy).toHaveBeenCalledWith(`Hello ${name}!`);
+    const result = sayHello(name);
+    expect(result).toBe(`Hello ${name}!`);
+  });
+
+  it('should return "Hello World!" when no name is provided', () => {
+    const result = sayHello();
+    expect(result).toBe("Hello World!");
   });
 });

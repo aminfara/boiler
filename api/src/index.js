@@ -1,5 +1,10 @@
-import { sayHello } from "./utils/say-hello.js";
+import { buildApp } from "./app.js";
 
-const name = "World";
+const app = buildApp();
 
-console.log(sayHello(name));
+app.listen({ port: 3000 }, function (error, _address) {
+  if (error) {
+    app.log.error(error);
+    throw error;
+  }
+});

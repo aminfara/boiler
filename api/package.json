@@ -5,5 +5,8 @@
   "scripts": {
     "preview": "node src/index.js",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "dependencies": {
+    "fastify": "^4.24.3"
   }
 }

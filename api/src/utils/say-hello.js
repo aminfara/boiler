@@ -1,6 +1,6 @@
 /**
  * @param {string} name
  */
-export function sayHello(name) {
-  console.log(`Hello ${name}!`);
+export function sayHello(name = "World") {
+  return `Hello ${name}!`;
 }
