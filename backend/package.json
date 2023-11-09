@@ -5,7 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc --build tsconfig.build.json",
+    "dev": "tsx --watch src/index.ts",
+    "build:decl": "tsc --build tsconfig.build.json",
+    "build:src": "tsx ./bundle.ts",
+    "build": "npm run build:decl && npm run build:src",
     "start": "node dist/index.js"
   }
 }
