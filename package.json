@@ -1,0 +1,13 @@
+{
+  "name": "@boiler/root",
+  "version": "1.0.0",
+  "description": "Boilerplate for React and Fastify monorepo with TypeScript",
+  "keywords": [
+    "react",
+    "fastify",
+    "typescript",
+    "monorepo",
+    "boilerplate"
+  ],
+  "license": "MIT"
+}
