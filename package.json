@@ -2,6 +2,7 @@
   "name": "@boiler/root",
   "version": "1.0.0",
   "description": "Boilerplate for React and Fastify monorepo with TypeScript",
+  "private": "true",
   "keywords": [
     "react",
     "fastify",
@@ -9,5 +10,21 @@
     "monorepo",
     "boilerplate"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "clean": "npm run --workspaces clean",
+    "build": "tsc --build"
+  },
+  "workspaces": [
+    "backend",
+    "frontend",
+    "common"
+  ],
+  "devDependencies": {
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/node": "^20.9.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  }
 }

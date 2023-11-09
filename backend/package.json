@@ -1,0 +1,11 @@
+{
+  "name": "@boiler/backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc --build tsconfig.build.json",
+    "start": "node dist/index.js"
+  }
+}
