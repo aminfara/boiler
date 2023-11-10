@@ -13,9 +13,9 @@
   "license": "MIT",
   "scripts": {
     "clean": "npm run --workspaces clean",
-    "build:decl": "tsc --build",
-    "build:src": "npm run --workspaces build:src",
-    "build": "npm run build:decl && npm run build:src"
+    "build:check": "tsc --build",
+    "build:emit": "npm run --workspaces build:emit",
+    "build": "npm run build:check && npm run build:emit"
   },
   "workspaces": [
     "backend",
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@tsconfig/node-lts": "^18.12.5",
     "@tsconfig/strictest": "^2.0.2",
+    "@tsconfig/vite-react": "^2.0.1",
     "@types/glob": "^8.1.0",
     "@types/node": "^20.9.0",
     "esbuild": "^0.19.5",
