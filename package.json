@@ -15,7 +15,8 @@
     "clean": "npm run --workspaces clean",
     "build:check": "tsc --build",
     "build:emit": "npm run --workspaces build:emit",
-    "build": "npm run build:check && npm run build:emit"
+    "build": "npm run build:check && npm run build:emit",
+    "test": "vitest run --coverage"
   },
   "workspaces": [
     "backend",
@@ -28,10 +29,12 @@
     "@tsconfig/vite-react": "^2.0.1",
     "@types/glob": "^8.1.0",
     "@types/node": "^20.9.0",
+    "@vitest/coverage-v8": "^0.34.6",
     "esbuild": "^0.19.5",
     "glob": "^10.3.10",
     "rimraf": "^5.0.5",
     "tsx": "^4.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
   }
 }
