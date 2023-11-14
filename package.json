@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "clean": "npm run --workspaces clean",
+    "clean": "npm run --workspaces clean && rimraf dist coverage",
     "build:check": "tsc --build",
     "build:emit": "npm run --workspaces build:emit",
     "build": "npm run build:check && npm run build:emit",

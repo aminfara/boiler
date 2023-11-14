@@ -4,6 +4,5 @@
     "allowImportingTsExtensions": true,
     "checkJs": false
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["**/*.ts", "**/*.tsx"]
 }

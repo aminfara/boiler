@@ -4,7 +4,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist coverage",
     "dev": "tsx --watch src/index.ts",
     "build:check": "tsc --build tsconfig.build.json",
     "build:emit": "tsx ./bundle.ts",

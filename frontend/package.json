@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist coverage",
     "dev": "vite",
     "build:check": "tsc --build tsconfig.build.json",
     "build:emit": "vite build",
