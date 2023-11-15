@@ -1,3 +1,15 @@
-import { getName } from "./utils/get-name.js";
+import fastify from "fastify";
 
-console.log(`Hello from ${getName()}!`);
+const server = fastify();
+
+server.get("/ping", async (_request, _reply) => {
+  return "pong\n";
+});
+
+server.listen({ port: 8080 }, (err, address) => {
+  if (err) {
+    console.error(err);
+    process.exit(1);
+  }
+  console.log(`Server listening at ${address}`);
+});

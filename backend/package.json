@@ -12,5 +12,10 @@
     "start": "node dist/index.js",
     "test:watch": "vitest",
     "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@fastify/sensible": "^5.5.0",
+    "fastify": "^4.24.3",
+    "fastify-plugin": "^4.5.1"
   }
 }
