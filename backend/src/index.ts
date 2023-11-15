@@ -1,15 +1,10 @@
-import fastify from "fastify";
+import { getServer } from "./app.js";
 
-const server = fastify();
+const server = await getServer({ logger: { level: "debug" } });
 
-server.get("/ping", async (_request, _reply) => {
-  return "pong\n";
-});
-
-server.listen({ port: 8080 }, (err, address) => {
-  if (err) {
-    console.error(err);
-    process.exit(1);
-  }
-  console.log(`Server listening at ${address}`);
-});
+try {
+  await server.listen({ port: 8080 });
+} catch (err) {
+  console.error(err);
+  process.exit(1);
+}
