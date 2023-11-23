@@ -1,6 +1,13 @@
-import { getServer } from "./app.js";
+import fastify from "fastify";
+import { AppOptions, app } from "./app.js";
 
-const server = await getServer({ logger: { level: "debug" } });
+const options: AppOptions = {
+  logger: { level: "debug" },
+};
+
+const server = fastify(options);
+
+await server.register(app, options);
 
 try {
   await server.listen({ port: 8080 });
