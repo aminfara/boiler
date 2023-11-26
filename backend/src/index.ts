@@ -1,8 +1,8 @@
-import fastify from "fastify";
-import { AppOptions, app } from "./app.js";
+import fastify from 'fastify';
+import { AppOptions, app } from './app.js';
 
 const options: AppOptions = {
-  logger: { level: "debug" },
+  logger: { level: 'debug' },
 };
 
 const server = fastify(options);

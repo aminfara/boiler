@@ -11,6 +11,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "npm run preview",
+    "format:check": "prettier --ignore-path ../.gitignore --check .",
+    "format": "npm run format:check -- --write",
     "test:watch": "vitest",
     "test": "vitest run --coverage"
   },

@@ -1,1 +1,1 @@
-console.log("Hello from common!");
+console.log('Hello from common!');
