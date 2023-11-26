@@ -10,6 +10,7 @@
     "build:emit": "tsx ./bundle.ts",
     "build": "npm run build:check && npm run build:emit",
     "start": "node dist/index.js",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --ignore-path ../.gitignore",
     "format:check": "prettier --ignore-path ../.gitignore --check .",
     "format": "npm run format:check -- --write",
     "test:watch": "vitest",

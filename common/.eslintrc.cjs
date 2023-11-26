@@ -3,12 +3,7 @@
  */
 module.exports = {
   root: true,
-  extends: [
-    '../.eslintrc.json',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
+  extends: ['../.eslintrc.json'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -17,8 +12,4 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   ignorePatterns: ['.eslintrc.cjs'],
-  plugins: ['react-refresh'],
-  rules: {
-    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-  },
 };

@@ -8,7 +8,7 @@
     "build:check": "tsc --build tsconfig.build.json",
     "build:emit": "vite build",
     "build": "npm run build:check && npm run build:emit",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --ignore-path ../.gitignore",
     "preview": "vite preview",
     "start": "npm run preview",
     "format:check": "prettier --ignore-path ../.gitignore --check .",
