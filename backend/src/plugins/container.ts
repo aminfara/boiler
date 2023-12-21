@@ -10,6 +10,7 @@ declare module 'fastify' {
 /**
  * This plugins adds the ioc container to the fastify instance
  */
-export default fp(async (server, _options) => {
-  server.decorate('container', iocContainer);
+export default fp(async (fastify) => {
+  fastify.decorate('container', iocContainer);
+  fastify.log.debug("Plugin 'container' registered");
 });
