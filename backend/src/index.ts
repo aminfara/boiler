@@ -1,6 +1,8 @@
 import fastify from 'fastify';
 import { type AppOptions, app } from './app.js';
-import { config } from './config.js';
+import { getConfig } from './config.js';
+
+const config = getConfig();
 
 const options: AppOptions = {
   logger: { level: 'debug' },

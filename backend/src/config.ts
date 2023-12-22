@@ -13,9 +13,13 @@ const environmentSchema = z.object({
 /**
  * This object contains the application configuration.
  */
-export const config = {
+const config = {
   VERSION: package_.version,
   ...environmentSchema.parse(process.env),
 };
 
-export type Config = typeof config;
+type Config = typeof config;
+
+export function getConfig(): Config {
+  return config;
+}

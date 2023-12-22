@@ -1,10 +1,14 @@
-import { config } from './config.js';
+import { getConfig } from './config.js';
 
 /**
  * A purpose-built IoC container.
  */
-export const iocContainer = {
-  config,
+const iocContainer = {
+  config: getConfig(),
 };
 
 export type IocContainer = typeof iocContainer;
+
+export function getIocContainer(): IocContainer {
+  return iocContainer;
+}
