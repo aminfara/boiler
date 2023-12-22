@@ -7,19 +7,15 @@ import package_ from '../package.json' assert { type: 'json' };
  */
 const environmentSchema = z.object({
   NODE_ENV: z.string().default('development'),
-  PORT: z.number().default(3000),
+  PORT: z.coerce.number().default(3000),
 });
 
-/**
- * This object contains the application configuration.
- */
-const config = {
-  VERSION: package_.version,
-  ...environmentSchema.parse(process.env),
-};
-
-type Config = typeof config;
-
-export function getConfig(): Config {
-  return config;
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export function getConfig() {
+  return {
+    VERSION: package_.version,
+    ...environmentSchema.parse(process.env),
+  };
 }
+
+export type Config = ReturnType<typeof getConfig>;
