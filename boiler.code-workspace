@@ -5,6 +5,10 @@
       "name": "backend"
     },
     {
+      "path": "frontend",
+      "name": "frontend"
+    },
+    {
       "path": "infra",
       "name": "infra"
     },
