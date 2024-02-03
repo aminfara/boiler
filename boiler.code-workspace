@@ -5,9 +5,17 @@
       "name": "backend"
     },
     {
+      "path": "infra",
+      "name": "infra"
+    },
+    {
       "path": ".",
       "name": "root"
     }
   ],
-  "settings": {}
+  "settings": {
+    "material-icon-theme.folders.associations": {
+      "infra": "aws"
+    }
+  }
 }
