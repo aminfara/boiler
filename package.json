@@ -23,6 +23,7 @@
   "workspaces": [
     "backend",
     "frontend",
+    "infra",
     "common"
   ],
   "devDependencies": {
